@@ -3,3 +3,37 @@
 <router-outlet></router-outlet>
 <h1 style="text-align: center;"> UNIVERSITY COLLEGE OF ENGINEERING , KARIYAVATTOM</h1>
 <h2 style="text-align: center;">DEPARTMENT OF ELECTRONICS AND COMMUNICATION</h2>
+
+<button (click)="getData()">getdata</button>
+
+<button (click)="showData()">showdata in console</button>
+<button (click)="pervData()">prev</button>
+<button (click)="nextData()">next</button>
+<table >
+    <tr>
+        <th>id</th>
+        <th>country</th>
+        <th>state</th>
+        <th>city</th>
+        <th>station</th>  
+        <th>last_update</th>
+        <th>pollutant_id</th>
+        <th>pollutant_min</th>
+        <th>pollutant_max</th>
+        <th>pollutant_avg</th>
+        <th>pollutant_unit</th>         
+      </tr>
+    <tr *ngFor='let data of neededData'>
+        <th>{{data.id}}</th>
+        <th>{{data.country}}</th>
+        <th>{{data.state}}</th>
+        <th>{{data.city}}</th>
+        <th>{{data.station}}</th>  
+        <th>{{data.last_update}}</th>
+        <th>{{data.pollutant_id}}</th>
+        <th>{{data.pollutant_min}}</th>
+        <th>{{data.pollutant_max}}</th>
+        <th>{{data.pollutant_avg}}</th>
+        <th>{{data.pollutant_unit}}</th>         
+      </tr>
+</table>

@@ -1,0 +1,10 @@
+table{
+border-color: blue;
+}
+button{
+    background-color: cadetblue;
+    font-size: medium;
+    padding: 1%;
+    padding-right: 2%;
+    margin-right: 4px;
+}
