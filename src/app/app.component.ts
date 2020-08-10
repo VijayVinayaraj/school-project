@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
 import { DataService } from './data.service';
 import { Data } from './data';
 import { Observable } from 'rxjs';
@@ -10,6 +10,10 @@ import { map } from 'rxjs/operators';
 })
 export class AppComponent {
   title = 'school-project';
+
+  ngOnInit(){
+    this.getData()
+  }
     public arrData=[]
 
    public neededData:Data[];

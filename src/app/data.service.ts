@@ -32,7 +32,7 @@ this.off=0
   }
 
   nextData(){
-    this.off++
+    this.off=this.off+10
     let param1 = new HttpParams()
     .set('api-key', '579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b')
     .append('format','json')
@@ -43,7 +43,7 @@ return this.http.get<RootObject>(this.apiUrl,{params:param1})
   }
 
   pervData(){
-    this.off--
+    this.off=this.off-10
     let param1 = new HttpParams()
     .set('api-key', '579b464db66ec23bdd000001cdd3946e44ce4aad7209ff7b23ac571b')
     .append('format','json')
